@@ -1,0 +1,170 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.home-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* About Us Section */
+.container {
+    padding: 80px 50px;
+    text-align: center;
+    background-color:white;
+}
+
+/* Background Image */
+.about-background {
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/053/471/482/small_2x/on-the-morning-with-golden-sunlight-in-the-rice-fields-in-rural-thailand-farmers-and-their-lifestyle-of-rice-farming-based-on-the-seasons-photo.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+/* About Text Box */
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify; /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(202, 198, 198, 0.1);
+    line-height: 1.8;
+    font-size: 16px;
+    color: white;
+}
+
+/* Center heading */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.product-carousel {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-carousel img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.product-carousel img:hover {
+    transform: scale(1.1);
+}
+
+#contact button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+#mapContainer {
+    margin-top: 10px;
+    display: none;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
